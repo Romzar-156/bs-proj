@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:700i" rel="stylesheet">
+    <title>BookStore</title>
+</head>
+<body>
+    <header>
+        <div class="account-menu">
+            <div class="content">
+                <ul>
+                    <li><a href="">Войти</a></li>
+                    <li><a href="">Регистрация</a></li>
+                </ul>
+                <!-- <ul>
+                    <li><a href="">Аккаунт</a></li>
+                    <li><a href="">Список желаний</a></li>
+                    <li><a href="">История заказов</a></li>
+                    <li><a href="">Избранное</a></li>
+                </ul> -->
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="content">
+                <img src="img/logo33.png" alt="logo" class="logo">
+                <form action="" method="get" class="search-form">
+                    <input type="search" placeholder="Я ищу..." name="search">
+                    <button type="submit"><i class="icon-search"></i></button>
+                </form>
+                <a class="basket" href="">
+                    <i class="icon-basket"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="slider" id="slider">
+                <span class="slide-left" onclick="slideToLeft()"><i class="icon-left-arrow"></i></span>
+                <img src="img/slider/1.jpg" alt="">
+                <span class="slide-right" onclick="slideToRight()"><i class="icon-right-arrow"></i></span>
+            </div>
+        </div>
+        <div class="content">
+            <section class="top-categories">
+                <h2>Топ категорий</h2>
+                <a href="" class="top-category">
+                    <h3>Category heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, doloremque consequuntur consectetur ullam repellendus sed porro voluptas, vitae, distinctio esse debitis. Impedit illum a iusto in ab aperiam molestiae dolor.
+                    </p>
+                </a>
+                <a href="" class="top-category">
+                    <h3>Category heading</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minus ipsa inventore nostrum labore, maxime ab numquam iste aut debitis perferendis, doloremque, dolores culpa dolore velit! Numquam ullam tenetur laudantium?</p>
+                </a>
+                <a href="" class="top-category">
+                    <h3>Category heading</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur minus debitis esse, beatae id eius suscipit asperiores quasi magnam est hic quia, ea consequuntur accusamus, et voluptatem necessitatibus ipsum eaque!</p>
+                </a>
+            </section>
+            <nav class="categories">
+                <h2>Категории</h2>
+                <ul>
+                    <li><a href="">Бизнес</a></li>
+                    <li><a href="">Детектив</a></li>
+                    <li><a href="">Искусство</a></li>
+                    <li><a href="">Классическая литература</a></li>
+                    <li><a href="">Криминал</a></li>
+                    <li><a href="">Психология</a></li>
+                    <li><a href="">Учебная литература</a></li>
+                    <li><a href="">Фантастика</a></li>
+                </ul>
+            </nav>
+            <section class="best-sellers">
+                <h2>Лидеры продаж</h2>
+                
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+                <div class="best-sellers_item">
+                    <img src="img/item-img.png" alt="">
+                    <h3>Book heading sample</h3>
+                    <span class="best-sellers_item_rating"></span>
+                    <span class="best-sellers_item_price">usd 100</span>
+                    <a href="" class="buy-button">Купить</a>
+                </div>
+            </section>
+        </div>
+        <section class="map">
+        
+        </section>
+    </main>
+    <footer>
+        <div class="content">
+        <div>
+            <h3>Информация</h3>
+            <ul>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Служба поддержки</h3>
+            <ul>
+                <li><a href="">Связаться с нами</a></li>
+                <li><a href="">Возврат товара</a></li>
+                <li><a href="">Карта сайта</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Дополнительно</h3>
+            <ul>
+                <li><a href="">Подарочные сертификаты</a></li>
+                <li><a href="">Партнерская программа</a></li>
+                <li><a href="">Акции</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Личный кабинет</h3>
+            <ul>
+                <li><a href="">Личный кабинет</a></li>
+                <li><a href="">История заказов</a></li>
+                <li><a href="">Избранное</a></li>
+                <li><a href="">Рассылка</a></li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+    <script src="slider.js"></script>
+</body>
+</html>
