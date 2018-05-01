@@ -70,11 +70,17 @@ header{
     font-size: 18px;
     border: none!important;
     background-color:rgb(241, 241, 241);
+    transition: 0.2s;
 }
 .search-form input:focus{
     outline: none !important;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.57);
 }
-  
+.search-form>input:focus{
+    position: relative;
+top:-2px;
+left: -2px;}
+
 .search-form input::placeholder{
     font-style: italic;
     color:rgba(143, 143, 143, 0.425);
@@ -89,7 +95,10 @@ header{
     border:none;
     font-size: 20px;
     color: rgb(172, 170, 170);
-    transition: 0.2s;
+}
+.search-form>input:focus+button{
+    top:-1px;
+    left: -52px;
 }
 .search-form button:hover{
     color: black;
@@ -104,7 +113,7 @@ header{
 }
 .basket::after{
     display: inline-block;
-    content: "1";
+    content: "0";
     height:30px;
     width:30px;
     position: relative;
