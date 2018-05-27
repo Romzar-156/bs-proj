@@ -3,7 +3,7 @@
     margin: 0;
 }
 *:focus{
-    outline:none;
+    outline:none !important;
 }
 html{
     font-size: 10px;
@@ -21,7 +21,7 @@ a{
 }
 
 .account-menu{
-    background-color: rgb(172, 170, 170);
+    background-color: rgb(230, 230, 230);
     height:25px;
 }
 .account-menu .content{
@@ -36,11 +36,16 @@ a{
 .account-menu li{
     display:inline-block;
     list-style: none;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 .account-menu a{
     font-size: 1.2rem;
     color:grey;
+    font-family: 'PT Mono', monospace;
+    transition: 0.2s;
+}
+.account-menu a:hover{
+    color:rgb(196, 174, 114)
 }
 .search-form{
     display: inline-block;
@@ -215,15 +220,209 @@ h2::after{
 }
 .top-categories{
     display: flex;
-    align-items:center;
+    align-items:top;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 70px;
 }
 .top-categories h2{
     width:100%;
 }
 .top-category{
     width:30%;
+    height:300px;
+    display: block;
+}
+.top-category{
+    background-size: cover;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.57);
+}
+.top-category:nth-child(2){
+    background-image: url('../img/categories/IT.jpg');
+}
+.top-category:nth-child(3){
+    background-image: url('../img/categories/fantasy.jpg');
+}
+.top-category:nth-child(4){
+    background-image: url('../img/categories/business.jpg');
+
+}
+.top-category h3{
+    background-color: rgb(144, 211, 29);
+    color: #fff;
+    width:100%;
+    position: absolute;
+    bottom:0;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'PT Mono', monospace;
+    font-size: 20px;
+}
+.categories{
+    width:25%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.57);
+}
+.categories h2{
+    font-size: 30px;
+    background-color: rgb(144, 211, 29);
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+.categories h2::after{
+    display: none;
 }
 
+.categories ul{
+    width:100%;
+}
+.categories ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+}
+.categories ul li a{
+    display: block;
+    padding: 10px 0;
+    padding-left:20px;
+    width: 100%;
+    font-family: 'PT Mono', monospace;
+    transition: 0.1s;
+}
+.categories ul li a:hover{
+    background-color: rgb(194, 194, 194);
+}
+.categories ul>li+li::before{
+    display: block;
+    content: "";
+    height:1px;
+    width:90%;
+    margin:auto;
+    background-color:  rgb(194, 194, 194);
+}
+.categories ul>li+li:hover::before{
+    background-color: white;
+}
+.categories ul>li:hover+li::before{
+    background-color: white;
+}
+.best-sellers{
+    width:72%;
+    margin-left: 28%;
+    display: flex;
+    align-items:top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.best-sellers h2{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.best-sellers_item{
+    width:23%;
+    background-color: white;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding:10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.57);
+}
+.best-sellers_item a{
+    width: 100%;
+}
+.best-sellers_item img{
+    display: block;
+    margin: auto;
+}
+.best-sellers_item h3{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'PT Mono', monospace;
+}
+.best-sellers_item_rating ul{
+    margin: auto;
+    width:95px;
+}
+.best-sellers_item_rating{
+    margin-bottom: 10px;
+    display: block;
+}
+.best-sellers_item_rating li{
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.best-sellers_item_price{
+    float:left;
+    font-size: 17px;
+    font-family: 'Philosopher', sans-serif;
+}
+.best-sellers_item_price::after{
+    content: " \20B4";
+    font-size:20px;
+    font-family: "Calibri";
+}
 
+.best-sellers_item form{
+    float: right;
+}
+.best-sellers_item form button{
+    padding:5px 10px ;
+    font-family: 'Philosopher', sans-serif;
+    background-color: rgb(137, 202, 24);
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+.best-sellers_item form button:active{
+    color: rgb(230, 230, 230);
+    background-color: rgb(144, 211, 29);
+}
+footer{
+    clear: both;
+    background-color: rgb(230, 230, 230);
+    margin-top:30px;
+}
+
+footer .content{
+    display: flex;
+    align-items:top;
+    justify-content: space-between;
+}
+main .content::after{
+    display: block;
+    content: "";
+    height:2px;
+    width:100%;
+    margin:auto;
+    background-color: rgb(172, 170, 170);
+    margin-top: 50px;
+}
+footer .content div{
+    width:25%;
+}
+footer div h3{
+    /* text-align: center; */
+    font-family: 'Philosopher';
+    font-size:20px;
+    margin-bottom: 20px;
+}
+footer div ul li{
+    /* text-align: center; */
+    list-style: none;
+    padding: 4px 0px;
+}
+footer div ul li a{
+    color: rgb(141, 141, 141);
+    font-size: 15px;
+    font-family: 'PT Mono', monospace;
+    transition:0.2s;
+
+}
+footer div ul li a:hover{
+    color: black;
+}
